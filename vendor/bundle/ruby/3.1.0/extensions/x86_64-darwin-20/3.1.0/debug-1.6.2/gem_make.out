@@ -3,14 +3,14 @@ current directory: /Users/ikuzawasatoshi/sam/vendor/bundle/ruby/3.1.0/gems/debug
 creating Makefile
 
 current directory: /Users/ikuzawasatoshi/sam/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20221018-57638-jk58dw sitelibdir\=./.gem.20221018-57638-jk58dw clean
+make DESTDIR\= sitearchdir\=./.gem.20221018-65366-u4i6xm sitelibdir\=./.gem.20221018-65366-u4i6xm clean
 
 current directory: /Users/ikuzawasatoshi/sam/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20221018-57638-jk58dw sitelibdir\=./.gem.20221018-57638-jk58dw
+make DESTDIR\= sitearchdir\=./.gem.20221018-65366-u4i6xm sitelibdir\=./.gem.20221018-65366-u4i6xm
 compiling debug.c
 compiling iseq_collector.c
 linking shared-object debug/debug.bundle
 
 current directory: /Users/ikuzawasatoshi/sam/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20221018-57638-jk58dw sitelibdir\=./.gem.20221018-57638-jk58dw install
-/usr/bin/install -c -m 0755 debug.bundle ./.gem.20221018-57638-jk58dw/debug
+make DESTDIR\= sitearchdir\=./.gem.20221018-65366-u4i6xm sitelibdir\=./.gem.20221018-65366-u4i6xm install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20221018-65366-u4i6xm/debug

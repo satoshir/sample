@@ -207,7 +207,6 @@ module Rails
           ActiveSupport.utc_to_local_returns_utc_offset_times = true
         else
           # raise "Unknown version #{target_version.to_s.inspect}"
-          # エラー発生したのでコメントアウトした。
         end
 
         @loaded_config_version = target_version
