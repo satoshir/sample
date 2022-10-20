@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 offset-4 text-center">
+      <h1>Dash Boards</h1>
+      <h2><%= current_user.name %></h2>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <%= link_to "記事一覧", users_articles_path, class: "btn btn-lg btn-primary btn-block" %> <br> 
+        <%= link_to t('.edit'), edit_user_registration_path, class: "btn btn-lg btn-primary btn-block" %> <br>
+        <%= link_to t('.signed_out'), signout_path, class: "btn btn-lg btn-warning btn-block" %>
+      </div>
+    </div>
+  </div>
+</div>
