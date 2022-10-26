@@ -23,7 +23,7 @@
           <td><%= image_tag article.image.url, class: 'rounded-circle mr15', width: '160', height: '160' %></td>
           <td>
             <%= link_to "編集", edit_users_article_path(article), class: "btn btn-success" %>
-            <%= link_to "削除",  users_article_path(article), method: :delete, data: { confirm: "削除してもよろしいですか？" }, class: "btn btn-danger" %>
+            <%= button_to "削除",  users_article_path(article), method: :delete, data: { confirm: "削除してもよろしいですか？" }, class: "btn btn-danger" %>
           </td>
         </tr>
       <% end %> 

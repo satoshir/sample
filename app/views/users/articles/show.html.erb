@@ -25,7 +25,7 @@
     </table>
     <div class = "btn">
       <%= link_to "編集", edit_users_article_path(id: @article.id), class: "btn btn-success btn-center" %>
-      <%= link_to "削除", users_article_path(id: @article.id), method: :delete, class: "btn btn-danger btn-center" %><br>
+      <%= button_to "削除", users_article_path(id: @article.id), method: :delete, class: "btn btn-danger btn-center" %><br>
       <%= link_to "記事一覧へ戻る", users_articles_path, class: "btn btn-lg btn-primary btn-center" %>
     </div>
   </div>    
