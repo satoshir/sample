@@ -1,0 +1,32 @@
+<% provide(:title, 'All Articles') %>
+<h1>記事一覧</h1>
+<div class="col-md-10 col-md-offset-1">
+  <table class="table table-condensed table-hover" id="table-articles">
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <%= link_to "新規作成", new_users_article_path(id: current_user.id), class: "btn btn-lg btn-primary " %>
+    </div>
+    <thead>
+      <tr>
+        <th>詳細表示</th>
+        <th>タイトル</th>
+        <th>内容</th>
+        <th>画像</th>
+        <th>編集・削除</th>
+      </tr>
+    </thead>
+    <body>
+      <% @articles.each do |article| %>
+        <tr>
+          <td><%= link_to "詳細", users_article_path(article), class: "btn btn-primary" %></td>
+          <td><%= article.title %></td>
+          <td><%= article.content %></td>
+          <td><%= image_tag article.image.url, class: 'rounded-circle mr15', width: '160', height: '160' %></td>
+          <td>
+            <%= link_to "編集", edit_users_article_path(article), class: "btn btn-success" %>
+            <%= button_to "削除",  users_article_path(article), method: :delete, data: { confirm: "削除してもよろしいですか？" }, class: "btn btn-danger" %>
+          </td>
+        </tr>
+      <% end %> 
+    </body>
+  </table>
+</div>

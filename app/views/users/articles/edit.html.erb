@@ -1,0 +1,21 @@
+<% provide(:title, 'edit') %>
+<h1>記事の編集</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">    
+    <%= form_with(model: @article, url:users_article_path, local: true) do |f| %>
+      <%= f.label :title, class: "label-edit" %>
+      <%= f.text_field :title, class: "form-control" %>
+
+      <%= f.label :content, class: "label-edit" %>
+      <%= f.text_area :content, class: "form-control" %>     
+
+      <%= f.label :image, class: "label-edit" %>
+      <%= f.file_field :image, class: "form-control" %>      
+
+      <%= f.submit "更新する", class: "btn btn-primary btn-block btn-new" %>
+      
+    <% end %>
+    <%= link_to "戻る", users_articles_path %>  
+  </div>
+</div>
